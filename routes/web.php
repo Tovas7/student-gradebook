@@ -33,6 +33,7 @@ Route::middleware('auth')->group(function () {
     // Student Routes
     Route::middleware('role:student')->group(function () {
         Route::get('/student/dashboard', [StudentController::class, 'dashboard'])->name('student.dashboard');
+        Route::get('/student/report', [StudentController::class, 'generateReport'])->name('student.report');
     });
 });
 
