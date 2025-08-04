@@ -1,62 +1,346 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Student Gradebook
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+![Laravel](https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white)
 
-## About Laravel
+A multi-role web application built with Laravel for managing and tracking student grades with three distinct user roles.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## Table of Contents
+- [Features](#-features)
+- [Technology Stack](#-technology-stack)
+- [Installation](#-installation)
+- [Usage Guide](#-usage-guide)
+- [Screenshots](#-screenshots)
+- [Contributing](#-contributing)
+- [License](#-license)
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## ✨ Features
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+### Admin Dashboard
+- **User Management**: Create and manage instructor accounts
+- **Course Management**: Create courses with unique codes and credit hours
+- **Course Assignment**: Assign courses to instructors
+- **Comprehensive Overview**: View all courses and instructor assignments
 
-## Learning Laravel
+### Instructor Dashboard
+- **Course List**: View all assigned courses
+- **Grade Management**: Enter and update student scores (0-100)
+- **Automatic Grading**: System converts scores to letter grades automatically
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+### Student Dashboard
+- **Grade Portal**: View all grades for enrolled courses
+- **GPA Calculator**: See cumulative GPA updated in real-time
+- **Report Generator**: One-click PDF grade report download
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+## 🛠️ Technology Stack
+- **Backend**: Laravel 11
+- **Frontend**: Tailwind CSS, Alpine.js
+- **Authentication**: Laravel Breeze
+- **Database**: MySQL/SQLite
+- **PDF Generation**: barryvdh/laravel-dompdf
+- **Deployment**: Ready for Laravel Forge/Vapor
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## 🚀 Installation
 
-## Laravel Sponsors
+### Prerequisites
+- PHP 8.2+
+- Composer 2.0+
+- Node.js 16+
+- MySQL 5.7+ or SQLite
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+### Setup Steps
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Tovas7/student-gradebook.git
+   cd student-gradebook
+# Student Gradebook
 
-### Premium Partners
+![Laravel](https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white)
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+A multi-role web application built with Laravel for managing and tracking student grades with three distinct user roles.
 
-## Contributing
+## Table of Contents
+- [Features](#-features)
+- [Technology Stack](#-technology-stack)
+- [Installation](#-installation)
+- [Usage Guide](#-usage-guide)
+- [Screenshots](#-screenshots)
+- [Contributing](#-contributing)
+- [License](#-license)
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+## ✨ Features
 
-## Code of Conduct
+### Admin Dashboard
+- **User Management**: Create and manage instructor accounts
+- **Course Management**: Create courses with unique codes and credit hours
+- **Course Assignment**: Assign courses to instructors
+- **Comprehensive Overview**: View all courses and instructor assignments
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+### Instructor Dashboard
+- **Course List**: View all assigned courses
+- **Grade Management**: Enter and update student scores (0-100)
+- **Automatic Grading**: System converts scores to letter grades automatically
 
-## Security Vulnerabilities
+### Student Dashboard
+- **Grade Portal**: View all grades for enrolled courses
+- **GPA Calculator**: See cumulative GPA updated in real-time
+- **Report Generator**: One-click PDF grade report download
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+## 🛠️ Technology Stack
+- **Backend**: Laravel 11
+- **Frontend**: Tailwind CSS, Alpine.js
+- **Authentication**: Laravel Breeze
+- **Database**: MySQL/SQLite
+- **PDF Generation**: barryvdh/laravel-dompdf
+- **Deployment**: Ready for Laravel Forge/Vapor
 
-## License
+## 🚀 Installation
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
-# student-gradebook
+### Prerequisites
+- PHP 8.2+
+- Composer 2.0+
+- Node.js 16+
+- MySQL 5.7+ or SQLite
+
+### Setup Steps
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Tovas7/student-gradebook.git
+   cd student-gradebook
+   # Student Gradebook
+
+![Laravel](https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white)
+
+A multi-role web application built with Laravel for managing and tracking student grades with three distinct user roles.
+
+## Table of Contents
+- [Features](#-features)
+- [Technology Stack](#-technology-stack)
+- [Installation](#-installation)
+- [Usage Guide](#-usage-guide)
+- [Screenshots](#-screenshots)
+- [Contributing](#-contributing)
+- [License](#-license)
+
+## ✨ Features
+
+### Admin Dashboard
+- **User Management**: Create and manage instructor accounts
+- **Course Management**: Create courses with unique codes and credit hours
+- **Course Assignment**: Assign courses to instructors
+- **Comprehensive Overview**: View all courses and instructor assignments
+
+### Instructor Dashboard
+- **Course List**: View all assigned courses
+- **Grade Management**: Enter and update student scores (0-100)
+- **Automatic Grading**: System converts scores to letter grades automatically
+
+### Student Dashboard
+- **Grade Portal**: View all grades for enrolled courses
+- **GPA Calculator**: See cumulative GPA updated in real-time
+- **Report Generator**: One-click PDF grade report download
+
+## 🛠️ Technology Stack
+- **Backend**: Laravel 11
+- **Frontend**: Tailwind CSS, Alpine.js
+- **Authentication**: Laravel Breeze
+- **Database**: MySQL/SQLite
+- **PDF Generation**: barryvdh/laravel-dompdf
+- **Deployment**: Ready for Laravel Forge/Vapor
+
+## 🚀 Installation
+
+### Prerequisites
+- PHP 8.2+
+- Composer 2.0+
+- Node.js 16+
+- MySQL 5.7+ or SQLite
+
+### Setup Steps
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Tovas7/student-gradebook.git
+   cd student-gradebook
+   Install dependencies:
+
+bash
+composer install
+npm install
+npm run build
+Configure environment:
+
+bash
+cp .env.example .env
+php artisan key:generate
+Set up database:
+
+bash
+php artisan migrate --seed
+Start the server:
+
+bash
+php artisan serve
+Access the application at: http://localhost:8000
+
+Configuration
+Environment Variables
+Key configuration options in .env:
+
+ini
+APP_ENV=local
+APP_DEBUG=true
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=gradebook
+DB_USERNAME=root
+DB_PASSWORD=
+
+# PDF Configuration
+FPDF_FONTPATH=/path/to/fonts
+User Roles
+Configure in app/Providers/AuthServiceProvider.php:
+
+php
+Gate::define('admin', fn(User $user) => $user->role === 'admin');
+Gate::define('instructor', fn(User $user) => $user->role === 'instructor');
+Usage
+Initial Setup
+Create first admin user:
+
+bash
+php artisan make:admin
+Log in at /login
+
+Access admin dashboard at /admin
+
+Common Workflows
+Admin Creating Course:
+
+Navigate to Courses > Add New
+
+Enter course details:
+
+Course Code (e.g., MATH-101)
+
+Title
+
+Credit Hours (1-4)
+
+Assign instructor
+
+Set enrollment capacity
+
+Instructor Grading:
+
+Select course from dashboard
+
+Choose "Enter Grades"
+
+Input scores or upload CSV
+
+Submit to calculate letter grades
+
+Student View:
+
+Log in to view dashboard
+
+Select "My Grades" for current courses
+
+Click "Generate Report" for PDF transcript
+
+Database Schema
+https://docs/database_schema.png
+
+Key Tables:
+
+users (id, name, email, role)
+
+courses (id, code, title, credits)
+
+enrollments (id, user_id, course_id)
+
+grades (id, enrollment_id, score, letter_grade)
+
+API Endpoints
+Endpoint	Method	Description
+/api/courses	GET	List all courses
+/api/grades/{course}	GET	Get grades for course
+/api/report/generate	POST	Generate PDF grade report
+Testing
+Run test suite:
+
+bash
+php artisan test
+Test Coverage Includes:
+
+User authentication
+
+Grade calculations
+
+PDF generation
+
+Role-based access control
+
+Deployment
+Production Requirements
+Web server (Nginx/Apache)
+
+Database server
+
+Queue worker (for PDF generation)
+
+Deployment Steps
+Configure production .env
+
+Run optimizations:
+
+bash
+php artisan config:cache
+php artisan route:cache
+php artisan view:cache
+Set up queue worker:
+
+bash
+php artisan queue:work
+Troubleshooting
+Common Issues:
+
+PDF Generation Fails:
+
+Ensure storage/ is writable
+
+Verify font path configuration
+
+Authentication Problems:
+
+Clear cache:
+
+bash
+php artisan cache:clear
+php artisan config:clear
+Contributing
+Fork the repository
+
+Create feature branch:
+
+bash
+git checkout -b feature/new-feature
+Commit changes:
+
+bash
+git commit -m "Add new feature"
+Push to branch:
+
+bash
+git push origin feature/new-feature
+Open pull request
+
+License
+MIT License - See LICENSE for details.
+
